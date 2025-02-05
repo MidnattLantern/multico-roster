@@ -1,0 +1,79 @@
+.Component1Foundation{
+    aspect-ratio: 2 / 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.ColorPaletteArray{
+    margin: 5px;
+    width: fit-content;
+    height: 20px;
+}
+.ColorPaletteObject{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transform: matrix(1, 0, -0.5, 1, 0, 0);
+}
+
+.MiniCollageArray{
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+.MiniCollageObject{
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid var(--dark);
+    transform: matrix(1, 0, -0.5, 1, 0, 0);
+    margin-right: 20px;
+}
+
+.NameTitleComponent{
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.NameTitleHeader{
+    color: var(--dark);
+    text-shadow: 1px 1px 1px var(--dark);
+}
+.NameTitleSubText{
+    color: var(--dark);
+}
+
+.ContinuteButtonComponent{
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ContinuteButtonStyle{
+    padding: 10px;
+}
+
+.LeftSection{
+    width: 33%;
+    height: 100%;
+}
+.CentreSection{
+    width: 34%;
+    height: 100%;
+}
+.RightSection{
+    width: 33%;
+    height: 100%;
+}
+
+.ImageSize{
+    width: 100%;
+}
