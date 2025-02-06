@@ -1,4 +1,13 @@
+.CannotInteract{ /* special */
+    pointer-events: none; /* Prevents interaction */
+    user-select: none;    /* Disables text selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+}
+
 .Component1Foundation{
+    position: relative; /* ancestor Component1Foundation must have positino set to relative for its child CharacterListFoundation to look right */
     aspect-ratio: 2 / 1;
     width: 100%;
     height: auto;
@@ -40,15 +49,19 @@
     height: 33%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
 }
 .NameTitleHeader{
     color: var(--dark);
     text-shadow: 1px 1px 1px var(--dark);
+    font-family: "Instrument Serif", serif;
+    font-size: 7.5vw;
 }
 .NameTitleSubText{
     color: var(--dark);
+    font-family: "Instrument Serif", serif;
+    font-size: 2.5vw;
 }
 
 .ContinuteButtonComponent{
@@ -57,8 +70,32 @@
     align-items: center;
     justify-content: center;
 }
-.ContinuteButtonStyle{
+.ContinuteButtonBorder{
+    width: 90%;
+    height: 40%;
+    border: 3px solid var(--theme);
+    border-radius: 5px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ContinuteButtonStyle{
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme);
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px var(--dark);
+    font-family: "Do Hyeon", Serif;
+    font-size: 2.5vw;
+    text-align: center;
+}
+.ContinuteButtonStyle:hover{
+    cursor: pointer;
+    background-color: var(--light);
+    color: var(--light);
+    transition: all ease 0.15s;
 }
 
 .LeftSection{
@@ -76,4 +113,50 @@
 
 .ImageSize{
     width: 100%;
+}
+
+.NameTitleBackgroundDecoratorComponent{
+    pointer-events: none;
+    width: 300%;
+    height: 33%;
+}
+.NameTitleBackgroundDecoratorText{
+    font-size: 20vw;
+    stroke: var(--dark);
+    stroke-width: 1;
+    fill: transparent;
+    font-family: "Do Hyeon", serif;
+}
+
+.CharacterListFoundation{
+    z-index: 9;
+    position: absolute; /* ancestor Component1Foundation must have positino set to relative for its child CharacterListFoundation to look right */
+    overflow: visible; /* allow selected character to overflow the borders of parent height*/
+    bottom: 0px;
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.CharacterItem{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10.0px;
+    width: 5vw;
+    height: 90%;
+    background-color: var(--light);
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 1px 2px 10px var(--dark);
+    transition: all 0.1s ease;
+}
+.CharacterItem:hover{
+    position: relative;
+    height: 105%;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+.CharacterItemSelected{
+
 }
