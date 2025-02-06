@@ -1,5 +1,7 @@
 import Styles from "./Component1.module.css";
 import { NicoletteImage1Alt } from "../../assets/character-roster/nicolette/";
+import { NicoletteImage2Alt } from "../../assets/character-roster/nicolette/";
+import { NicoletteImage3Alt } from "../../assets/character-roster/nicolette/";
 
 const Component1 = () => {
 
@@ -19,9 +21,15 @@ const Component1 = () => {
     const MiniCollage = () => {
         return(<>
             <div className={Styles.MiniCollageArray}>
-                <svg className={Styles.MiniCollageObject}/>
-                <svg className={Styles.MiniCollageObject}/>
-                <svg className={Styles.MiniCollageObject}/>
+                <div className={Styles.MiniCollageObject}>
+                    <img className={`${Styles.MiniCollageImageSize} ${Styles.CannotInteract}`} src={NicoletteImage1Alt} alt="Nicolette 1"/>
+                </div>
+                <div className={Styles.MiniCollageObject}>
+                    <img className={`${Styles.MiniCollageImageSize} ${Styles.CannotInteract}`} src={NicoletteImage2Alt} alt="Nicolette 2"/>
+                </div>
+                <div className={Styles.MiniCollageObject}>
+                    <img className={`${Styles.MiniCollageImageSize} ${Styles.CannotInteract}`} src={NicoletteImage3Alt} alt="Nicolette 3"/>
+                </div>
             </div>
         </>)
     }
@@ -30,7 +38,7 @@ const Component1 = () => {
         return(<>
             <div className={`${Styles.NameTitleComponent} ${Styles.CannotInteract}`}>
                 <h1 className={Styles.NameTitleHeader}>NICOLETTE</h1>
-                <p className={Styles.NameTitleSubText}>very saucy</p>
+                <p className={Styles.NameTitleSubText}>Subtext for Nicolette</p>
             </div>
         </>)
     }
@@ -49,7 +57,7 @@ const Component1 = () => {
 
     const DisplayCharacter = () => {
         return(<>
-            <img className={`${Styles.ImageSize} ${Styles.CannotInteract}`} src={NicoletteImage1Alt} alt="Nicolette 1"/>
+            <img className={`${Styles.ImageSize} ${Styles.CannotInteract} ${Styles.ImageShadow}`} src={NicoletteImage1Alt} alt="Nicolette 1"/>
         </>)
     }
 
@@ -57,7 +65,7 @@ const Component1 = () => {
         return(<>
             <svg className={`${Styles.NameTitleBackgroundDecoratorComponent} ${Styles.CannotInteract}`}>
                 <text x="0" y="90%" className={Styles.NameTitleBackgroundDecoratorText}>
-                    NICOLETTE
+                    NICOLETTE NICOLETTE
                 </text>
             </svg>
         </>)
@@ -78,10 +86,15 @@ const Component1 = () => {
             </div>
 
             <div className={Styles.CharacterListFoundation}>
-                <svg className={Styles.CharacterItem}/>
-                <svg className={Styles.CharacterItem}/>
-                <svg className={`${Styles.CharacterItem} ${Styles.CharacterItemSelected}`}/>
-                <svg className={Styles.CharacterItem}/>
+                <div className={Styles.CharacterItem}>
+                    <img className={`${Styles.CharacterItemImageSize} ${Styles.CannotInteract}`} src={NicoletteImage1Alt} alt="Nicolette 1"/>
+                </div>
+                <div className={Styles.CharacterItem}>
+                    <img className={`${Styles.CharacterItemImageSize} ${Styles.CannotInteract}`} src={NicoletteImage2Alt} alt="Nicolette 2"/>
+                </div>
+                <div className={Styles.CharacterItem}>
+                    <img className={`${Styles.CharacterItemImageSize} ${Styles.CannotInteract}`} src={NicoletteImage3Alt} alt="Nicolette 3"/>
+                </div>
             </div>
         </div>
     </>)
