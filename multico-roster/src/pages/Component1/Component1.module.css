@@ -71,6 +71,99 @@
     justify-content: center;
 }
 
+.ThirdsCrossDecorator{
+    stroke: var(--dark-transparent);
+    stroke-width: 0.05vw;
+}
+.ThirdsCrossPlacement1{
+    position: fixed;
+    top: calc(50% - 25vw);
+    left: 0vw;
+}
+.ThirdsCrossPlacement2{
+    position: fixed;
+    top: calc(50% - 25vw);
+    left: 32%;
+}
+.ThirdsCrossPlacement3{
+    position: fixed;
+    top: calc(50% - 25vw);
+    right: 32%;
+}
+.ThirdsCrossPlacement4{
+    position: fixed;
+    top: calc(50% - 25vw);
+    right: 0;
+}
+.ThirdsCrossPlacement5{
+    position: fixed;
+    top: calc(50% - 9.5vw);
+    left: 0;
+}
+.ThirdsCrossPlacement6{
+    position: fixed;
+    top: calc(50% - 9.5vw);
+    left: 32%;
+}
+.ThirdsCrossPlacement7{
+    position: fixed;
+    top: calc(50% - 9.5vw);
+    right: 32%;
+}
+.ThirdsCrossPlacement8{
+    position: fixed;
+    top: calc(50% - 9.5vw);
+    right: 0;
+}
+.ThirdsCrossPlacement9{
+    position: fixed;
+    top: calc(50% + 7vw);
+    left: 0;
+    z-index: 10;
+}
+.ThirdsCrossPlacement10{
+    position: fixed;
+    top: calc(50% + 7vw);
+    left: 32%;
+    z-index: 10;
+}
+.ThirdsCrossPlacement11{
+    position: fixed;
+    top: calc(50% + 7vw);
+    right: 32%;
+    z-index: 10;
+}
+.ThirdsCrossPlacement12{
+    position: fixed;
+    top: calc(50% + 7vw);
+    right: 0;
+    z-index: 10;
+}
+.ThirdsCrossPlacement13{
+    position: fixed;
+    top: calc(50% + 23vw);
+    left: 0;
+    z-index: 10;
+}
+.ThirdsCrossPlacement14{
+    position: fixed;
+    top: calc(50% + 23vw);
+    left: 32%;
+    z-index: 10;
+}
+.ThirdsCrossPlacement15{
+    position: fixed;
+    top: calc(50% + 23vw);
+    right: 32%;
+    z-index: 10;
+}
+.ThirdsCrossPlacement16{
+    position: fixed;
+    top: calc(50% + 23vw);
+    right: 0;
+    z-index: 10;
+}
+
 .AlignCirclesDecorator{
     position: fixed;
     width: 75vw;
@@ -91,16 +184,34 @@
 }
 
 .ColorPaletteArray{
-    margin: 5px;
-    width: fit-content;
-    height: 20px;
+    position: fixed;
+    width: 12vw;
+    height: 1vw;
+    bottom: calc(50% + 23vw);
+    left: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .ColorPaletteObject{
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 2vw;
+    height: 1vw;
+    margin-left: 0.5vw;
     transform: matrix(1, 0, -0.5, 1, 0, 0);
+    border: 0.05vw solid var(--dark-transparent);
+}
+.ColorPalettePrimary{
+    background-color: #3D3C42;
+}
+.ColorPaletteSecondary{
+    background-color: none;
+}
+.ColorPaletteAccent{
+    background-color: #927A72;
+}
+.ColorPaletteTheme{
+    background-color: #CC012D;
 }
 
 .MiniCollageArray{
@@ -166,19 +277,25 @@
     padding: 0.5vw;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     backdrop-filter: blur(2.5px);
 }
 .ContinuteButtonStyle{
     width: 100%;
     height: 100%;
     background-color: var(--theme);
+    color: var(--light);
     border: none;
     border-radius: 0.2vw;
     box-shadow: 0px 5px 10px var(--dark);
     font-family: "Do Hyeon", Serif;
     font-size: 2.5vw;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+}
+.ContinuteButtonArrow{
+    width: fit-content;
 }
 .ContinuteButtonStyle:hover{
     cursor: pointer;
@@ -264,7 +381,7 @@
     transform: scale(5);
 }
 .CharacterItemSelected{
-
+    height: 105%;
 }
 
 .Test{
