@@ -295,7 +295,7 @@
     justify-content:end;
 }
 .ContinuteButtonArrow{
-    width: fit-content;
+    width: 5vw;
 }
 .ContinuteButtonStyle:hover{
     cursor: pointer;
