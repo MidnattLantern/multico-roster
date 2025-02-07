@@ -2,8 +2,29 @@ import Styles from "./Component1.module.css";
 import { NicoletteImage1Alt } from "../../assets/character-roster/nicolette/";
 import { NicoletteImage2Alt } from "../../assets/character-roster/nicolette/";
 import { NicoletteImage3Alt } from "../../assets/character-roster/nicolette/";
+import TopLeftCorner from "../../assets/vector-graphics/TopLeftCorner.svg?react";
+import BottomLeftCorner from "../../assets/vector-graphics/BottomLeftCorner.svg?react";
+import BottomRightCorner from "../../assets/vector-graphics/BottomRightCorner.svg?react";
+import CirclesDecorator from "../../assets/vector-graphics/CirclesDecorator.svg?react";
 
 const Component1 = () => {
+
+    const CornerDecorators = () => {
+        return(<>
+            <div className={Styles.AlignTopLeftCorner}>
+                <TopLeftCorner className={Styles.CornerAppearance} />
+            </div>
+            <div className={Styles.AlignBottomLeftCorner}>
+                <BottomLeftCorner className={Styles.CornerAppearance} />
+            </div>
+            <div className={Styles.AlignBottomRightCorner}>
+                <BottomRightCorner className={Styles.CornerAppearance} />
+            </div>
+            <div className={Styles.AlignCirclesDecorator}>
+                <CirclesDecorator className={Styles.CirclesDecoratorAppearace}/>
+            </div>
+        </>)
+    }
 
     /*
     const ColorPalette = () => {
@@ -22,13 +43,13 @@ const Component1 = () => {
         return(<>
             <div className={Styles.MiniCollageArray}>
                 <div className={Styles.MiniCollageObject}>
-                    <img className={`${Styles.MiniCollageImageSize} ${Styles.CannotInteract}`} src={NicoletteImage1Alt} alt="Nicolette 1"/>
+                    <img className={`${Styles.MiniCollageImage} ${Styles.CannotInteract}`} src={NicoletteImage1Alt} alt="Nicolette 1"/>
                 </div>
                 <div className={Styles.MiniCollageObject}>
-                    <img className={`${Styles.MiniCollageImageSize} ${Styles.CannotInteract}`} src={NicoletteImage2Alt} alt="Nicolette 2"/>
+                    <img className={`${Styles.MiniCollageImage} ${Styles.CannotInteract}`} src={NicoletteImage2Alt} alt="Nicolette 2"/>
                 </div>
                 <div className={Styles.MiniCollageObject}>
-                    <img className={`${Styles.MiniCollageImageSize} ${Styles.CannotInteract}`} src={NicoletteImage3Alt} alt="Nicolette 3"/>
+                    <img className={`${Styles.MiniCollageImage} ${Styles.CannotInteract}`} src={NicoletteImage3Alt} alt="Nicolette 3"/>
                 </div>
             </div>
         </>)
@@ -73,6 +94,7 @@ const Component1 = () => {
 
     return(<>
         <div className={Styles.Component1Foundation}>
+            <CornerDecorators />
             <div className={Styles.LeftSection}>
                 <MiniCollage />
                 <NameTitleBackgroundDecorator />
@@ -96,6 +118,7 @@ const Component1 = () => {
                     <img className={`${Styles.CharacterItemImageSize} ${Styles.CannotInteract}`} src={NicoletteImage3Alt} alt="Nicolette 3"/>
                 </div>
             </div>
+
         </div>
     </>)
 }
