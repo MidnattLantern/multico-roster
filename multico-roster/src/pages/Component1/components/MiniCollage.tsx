@@ -7,9 +7,11 @@ import { MapCharacterImages } from "../../../assets/character-roster/MapCharacte
 const MiniCollage: React.FC<{
     currentCharacterID: number;
     currentCharacterName: string;
+    currentColorTheme: string;
 }> = ({
     currentCharacterID,
-    currentCharacterName
+    currentCharacterName,
+    currentColorTheme
 }) => {
     
     const images = MapCharacterImages[currentCharacterName];
@@ -18,13 +20,13 @@ const MiniCollage: React.FC<{
     
         <div className={Styles.MiniCollageArray}>
             {currentCharacterID !== 0 ? (<>
-                <div className={Styles.MiniCollageObject}>
+                <div className={Styles.MiniCollageObject} style={{ backgroundColor: currentColorTheme}}>
                     <img className={`${Styles.MiniCollageImage} ${Styles.CannotInteract}`} src={images[0]} alt="Nicolette 1"/>
                 </div>
-                <div className={Styles.MiniCollageObject}>
+                <div className={Styles.MiniCollageObject} style={{ backgroundColor: currentColorTheme}}>
                     <img className={`${Styles.MiniCollageImage} ${Styles.CannotInteract}`} src={images[1]} alt="Nicolette 2"/>
                 </div>
-                <div className={Styles.MiniCollageObject}>
+                <div className={Styles.MiniCollageObject} style={{ backgroundColor: currentColorTheme}}>
                     <img className={`${Styles.MiniCollageImage} ${Styles.CannotInteract}`} src={images[2]} alt="Nicolette 3"/>
                 </div>
             </>) : (<>

@@ -2,16 +2,28 @@
     {
         "id": 0,
         "name": "",
-        "subtext": ""
+        "subtext": "",
+        "colorPrimary": "#ffffff",
+        "colorSecondary": "#ffffff",
+        "colorAccent": "#ffffff",
+        "colorTheme": "#ffffff"
     },
     {
         "id": 1,
         "name": "nicolette",
-        "subtext": "Street rat victim of a terrible fate"
+        "subtext": "Street rat victim of a terrible fate",
+        "colorPrimary": "#3D3C42",
+        "colorSecondary": "#ffffff",
+        "colorAccent": "#927A72",
+        "colorTheme": "#CC012D"
     },
     {
         "id": 2,
         "name": "Nutoilet",
-        "subtext": "very saucy rat"
+        "subtext": "very saucy rat",
+        "colorPrimary": "#3D3C42",
+        "colorSecondary": "#ffffff",
+        "colorAccent": "#927A72",
+        "colorTheme": "#CC012D"
     }
 ]

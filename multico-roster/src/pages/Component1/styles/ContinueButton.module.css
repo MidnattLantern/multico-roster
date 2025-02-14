@@ -46,3 +46,8 @@
     color: var(--light);
     transition: all ease 0.15s;
 }
+.Unselected{
+    font-family: "Do Hyeon", Serif;
+    color: var(--theme);
+    font-size: 2.5vw;
+}

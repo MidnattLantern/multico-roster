@@ -26,6 +26,6 @@
     stroke-width: 0.05vw;
     fill: transparent;
     font-family: "Do Hyeon", serif;
-
+    text-transform: uppercase;
     animation: name-titile-decorator-slide-animation 30s linear infinite;
 }

@@ -17,8 +17,6 @@
     margin-left: -1vw;
     width: 10vw;
     height: 7.5vw;
-    border: 0.05vw solid var(--dark);
-    background-color: var(--theme-nicolette);
 /*    transform: matrix(1, 0, -0.5, 1, 0, 0);*/
     overflow: hidden;
     clip-path: polygon(100% 10%, 75% 90%, 0% 90%, 25% 10%);

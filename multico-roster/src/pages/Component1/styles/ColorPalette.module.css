@@ -25,15 +25,3 @@
     transform: matrix(1, 0, -0.5, 1, 0, 0);
     border: 0.05vw solid var(--dark-transparent);
 }
-.ColorPalettePrimary{
-    background-color: #3D3C42;
-}
-.ColorPaletteSecondary{
-    background-color: none;
-}
-.ColorPaletteAccent{
-    background-color: #927A72;
-}
-.ColorPaletteTheme{
-    background-color: #CC012D;
-}

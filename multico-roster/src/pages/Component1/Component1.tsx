@@ -18,6 +18,10 @@ const Component1 = () => {
     const currentCharacterID = rosterData[identifyCharacter]["id"];
     const currentCharacterName = rosterData[identifyCharacter]["name"];
     const currentCharacterSubtext = rosterData[identifyCharacter]["subtext"];
+    const currentColorPrimary = rosterData[identifyCharacter]["colorPrimary"];
+    const currentColorSecondary = rosterData[identifyCharacter]["colorSecondary"];
+    const currentColorAccent = rosterData[identifyCharacter]["colorAccent"];
+    const currentColorTheme = rosterData[identifyCharacter]["colorTheme"];
 
     useEffect(() => {
         setIdentifyCharacter(1);
@@ -26,25 +30,40 @@ const Component1 = () => {
     return(<>
         <div className={Styles.Component1Foundation}>
             <CornerDecorators />
-            <ColorPalette />
+            <ColorPalette
+            currentColorPrimary={currentColorPrimary}
+            currentColorSecondary={currentColorSecondary}
+            currentColorAccent={currentColorAccent}
+            currentColorTheme={currentColorTheme}
+            />
             <ThirdsCrossDecorator />
 
             <div className={Styles.LeftSection}>
                 <MiniCollage
                 currentCharacterID={currentCharacterID}
                 currentCharacterName={currentCharacterName}
+                currentColorTheme={currentColorTheme}
                 />
-                <NameTitleBackgroundDecorator />
+                <NameTitleBackgroundDecorator
+                currentCharacterID={currentCharacterID}
+                currentCharacterName={currentCharacterName}
+                />
             </div>
             <div className={Styles.CentreSection}>
-                <DisplayCharacter />
+                <DisplayCharacter
+                currentCharacterID={currentCharacterID}
+                currentCharacterName={currentCharacterName}
+                />
             </div>
             <div className={Styles.RightSection}>
                 <NameTitle
                 currentCharacterName={currentCharacterName}
                 currentCharacterSubtext={currentCharacterSubtext}
                 />
-                <ContinueButton />
+                <ContinueButton
+                currentCharacterID={currentCharacterID}
+                currentCharacterName={currentCharacterName}
+                />
             </div>
 
             <CharacterList />
