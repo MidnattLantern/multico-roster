@@ -1,0 +1,30 @@
+.CannotInteract{ /* special */
+    pointer-events: none; /* Prevents interaction */
+    user-select: none;    /* Disables text selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+}
+
+.NameTitleComponent{
+    position: relative; /* allow title center title and put subtitle below centered title */
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+.NameTitleHeader{
+    position: absolute; /* perfect center */
+    color: var(--dark);
+    text-shadow: 0.2vw 0.2vw 0.2vw var(--dark-transparent);
+    font-family: "Instrument Serif", serif;
+    font-size: 7.5vw;
+}
+.NameTitleSubText{
+    position: absolute; /* same relation as title... */
+    bottom: 1.75vw; /* ...but still below title */
+    color: var(--dark);
+    font-family: "Instrument Serif", serif;
+    font-size: 2.5vw;
+}

@@ -1,0 +1,31 @@
+.CannotInteract{ /* special */
+    pointer-events: none; /* Prevents interaction */
+    user-select: none;    /* Disables text selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+}
+
+@keyframes name-titile-decorator-slide-animation {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-99%); /* 99% no hickup, 100% hickup */
+    }
+}
+
+.NameTitleBackgroundDecoratorComponent{
+    pointer-events: none;
+    width: 300%;
+    height: 33%;
+}
+.NameTitleBackgroundDecoratorText{
+    font-size: 20vw;
+    stroke: var(--dark-transparent);
+    stroke-width: 0.05vw;
+    fill: transparent;
+    font-family: "Do Hyeon", serif;
+
+    animation: name-titile-decorator-slide-animation 30s linear infinite;
+}

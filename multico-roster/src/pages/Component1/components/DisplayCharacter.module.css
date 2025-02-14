@@ -1,0 +1,14 @@
+.CannotInteract{ /* special */
+    pointer-events: none; /* Prevents interaction */
+    user-select: none;    /* Disables text selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+}
+
+.ImageSize{
+    width: 100%;
+}
+.ImageShadow {
+    filter: drop-shadow(-2vh 2vh 1vh var(--dark-transparent));
+}

@@ -1,0 +1,39 @@
+.CannotInteract{ /* special */
+    pointer-events: none; /* Prevents interaction */
+    user-select: none;    /* Disables text selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+}
+
+/* migrate to component */
+.ColorPaletteArray{
+    position: fixed;
+    width: 12vw;
+    height: 1vw;
+    bottom: calc(50% + 23vw);
+    left: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.ColorPaletteObject{
+    width: 2vw;
+    height: 1vw;
+    margin-left: 0.5vw;
+    transform: matrix(1, 0, -0.5, 1, 0, 0);
+    border: 0.05vw solid var(--dark-transparent);
+}
+.ColorPalettePrimary{
+    background-color: #3D3C42;
+}
+.ColorPaletteSecondary{
+    background-color: none;
+}
+.ColorPaletteAccent{
+    background-color: #927A72;
+}
+.ColorPaletteTheme{
+    background-color: #CC012D;
+}

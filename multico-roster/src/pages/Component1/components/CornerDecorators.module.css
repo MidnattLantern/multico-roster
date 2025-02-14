@@ -1,0 +1,73 @@
+@keyframes rotate-180 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.CannotInteract{ /* special */
+    pointer-events: none; /* Prevents interaction */
+    user-select: none;    /* Disables text selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+}
+
+.CornerAppearance{
+    stroke-width: 0.05vw;
+    fill: none;
+    stroke: var(--dark-transparent);
+}
+.AlignTopLeftCorner{
+    z-index: 10;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AlignBottomLeftCorner{
+    z-index: 10; /* above the blur effect */
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AlignBottomRightCorner{
+    z-index: 10; /* above the blur effect */
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AlignCirclesDecorator{
+    position: fixed;
+    width: 75vw;
+    height: 75vw;
+    right: -5vw;
+    bottom: calc(50% + 10vw);
+    filter: blur(1px);
+
+    transform:matrix(1.00,0.30,0.40,1.00,0,0);
+    -ms-transform:matrix(1.00,0.30,0.40,1.00,0,0);
+    -webkit-transform:matrix(1.00,0.30,0.40,1.00,0,0);
+}
+.CirclesDecoratorAppearace{
+    width: 75vw;
+    height: 75vw;
+    fill: var(--dark-transparent);
+    animation: rotate-180 30s linear infinite;
+}

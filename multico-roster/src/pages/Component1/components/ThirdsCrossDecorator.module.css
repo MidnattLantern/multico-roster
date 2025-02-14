@@ -1,0 +1,100 @@
+.CannotInteract{ /* special */
+    pointer-events: none; /* Prevents interaction */
+    user-select: none;    /* Disables text selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+}
+
+.ThirdsCrossDecorator{
+    stroke: var(--dark-transparent);
+    stroke-width: 0.05vw;
+}
+.ThirdsCrossPlacement1{
+    position: fixed;
+    top: calc(50% - 25vw);
+    left: 0vw;
+}
+.ThirdsCrossPlacement2{
+    position: fixed;
+    top: calc(50% - 25vw);
+    left: 32%;
+}
+.ThirdsCrossPlacement3{
+    position: fixed;
+    top: calc(50% - 25vw);
+    right: 32%;
+}
+.ThirdsCrossPlacement4{
+    position: fixed;
+    top: calc(50% - 25vw);
+    right: 0;
+}
+.ThirdsCrossPlacement5{
+    position: fixed;
+    top: calc(50% - 9.5vw);
+    left: 0;
+}
+.ThirdsCrossPlacement6{
+    position: fixed;
+    top: calc(50% - 9.5vw);
+    left: 32%;
+}
+.ThirdsCrossPlacement7{
+    position: fixed;
+    top: calc(50% - 9.5vw);
+    right: 32%;
+}
+.ThirdsCrossPlacement8{
+    position: fixed;
+    top: calc(50% - 9.5vw);
+    right: 0;
+}
+.ThirdsCrossPlacement9{
+    position: fixed;
+    top: calc(50% + 7vw);
+    left: 0;
+    z-index: 10;
+}
+.ThirdsCrossPlacement10{
+    position: fixed;
+    top: calc(50% + 7vw);
+    left: 32%;
+    z-index: 10;
+}
+.ThirdsCrossPlacement11{
+    position: fixed;
+    top: calc(50% + 7vw);
+    right: 32%;
+    z-index: 10;
+}
+.ThirdsCrossPlacement12{
+    position: fixed;
+    top: calc(50% + 7vw);
+    right: 0;
+    z-index: 10;
+}
+.ThirdsCrossPlacement13{
+    position: fixed;
+    top: calc(50% + 23vw);
+    left: 0;
+    z-index: 10;
+}
+.ThirdsCrossPlacement14{
+    position: fixed;
+    top: calc(50% + 23vw);
+    left: 32%;
+    z-index: 10;
+}
+.ThirdsCrossPlacement15{
+    position: fixed;
+    top: calc(50% + 23vw);
+    right: 32%;
+    z-index: 10;
+}
+.ThirdsCrossPlacement16{
+    position: fixed;
+    top: calc(50% + 23vw);
+    right: 0;
+    z-index: 10;
+}
