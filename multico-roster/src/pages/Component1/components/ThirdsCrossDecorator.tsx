@@ -1,4 +1,4 @@
-import Styles from "./ThirdsCrossDecorator.module.css";
+import Styles from "../styles/ThirdsCrossDecorator.module.css";
 
 const ThirdsCrossDecorator = () => {
 

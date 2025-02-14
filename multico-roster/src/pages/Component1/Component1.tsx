@@ -1,10 +1,27 @@
 import Styles from "./Component1.module.css";
-import { NicoletteImage1Alt } from "../../assets/character-roster/nicolette/";
-import { NicoletteImage2Alt } from "../../assets/character-roster/nicolette/";
-import { NicoletteImage3Alt } from "../../assets/character-roster/nicolette/";
-import { CornerDecorators, ThirdsCrossDecorator, ColorPalette, NameTitle, MiniCollage, ContinueButton, DisplayCharacter, NameTitleBackgroundDecorator } from "./components";
+import {
+    CornerDecorators,
+    ThirdsCrossDecorator,
+    ColorPalette,
+    NameTitle,
+    MiniCollage,
+    ContinueButton,
+    DisplayCharacter,
+    NameTitleBackgroundDecorator,
+    CharacterList
+} from "./components";
+import rosterData from "../../data/roster_data.json";
+import { useEffect, useState } from "react";
 
 const Component1 = () => {
+    const [identifyCharacter, setIdentifyCharacter] = useState<number>(0); // 0 or ID does not exist will cause "blackout"
+    const currentCharacterID = rosterData[identifyCharacter]["id"];
+    const currentCharacterName = rosterData[identifyCharacter]["name"];
+    const currentCharacterSubtext = rosterData[identifyCharacter]["subtext"];
+
+    useEffect(() => {
+        setIdentifyCharacter(1);
+    }, []);
 
     return(<>
         <div className={Styles.Component1Foundation}>
@@ -13,28 +30,24 @@ const Component1 = () => {
             <ThirdsCrossDecorator />
 
             <div className={Styles.LeftSection}>
-                <MiniCollage />
+                <MiniCollage
+                currentCharacterID={currentCharacterID}
+                currentCharacterName={currentCharacterName}
+                />
                 <NameTitleBackgroundDecorator />
             </div>
             <div className={Styles.CentreSection}>
                 <DisplayCharacter />
             </div>
             <div className={Styles.RightSection}>
-                <NameTitle />
+                <NameTitle
+                currentCharacterName={currentCharacterName}
+                currentCharacterSubtext={currentCharacterSubtext}
+                />
                 <ContinueButton />
             </div>
 
-            <div className={Styles.CharacterListFoundation}>
-                <div className={`${Styles.CharacterItem} ${Styles.CharacterItemSelected}`}>
-                    <img className={`${Styles.CharacterItemImageSize} ${Styles.CannotInteract}`} src={NicoletteImage1Alt} alt="Nicolette 1"/>
-                </div>
-                <div className={Styles.CharacterItem}>
-                    <img className={`${Styles.CharacterItemImageSize} ${Styles.CannotInteract}`} src={NicoletteImage2Alt} alt="Nicolette 2"/>
-                </div>
-                <div className={Styles.CharacterItem}>
-                    <img className={`${Styles.CharacterItemImageSize} ${Styles.CannotInteract}`} src={NicoletteImage3Alt} alt="Nicolette 3"/>
-                </div>
-            </div>
+            <CharacterList />
 
         </div>
     </>)

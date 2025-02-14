@@ -20,6 +20,7 @@
     text-shadow: 0.2vw 0.2vw 0.2vw var(--dark-transparent);
     font-family: "Instrument Serif", serif;
     font-size: 7.5vw;
+    text-transform: uppercase;
 }
 .NameTitleSubText{
     position: absolute; /* same relation as title... */

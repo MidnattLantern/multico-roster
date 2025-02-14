@@ -1,5 +1,5 @@
 import ContinueButtonArrow from "../../../assets/vector-graphics/ContinueButtonArrow.svg?react";
-import Styles from "./ContinueButton.module.css";
+import Styles from "../styles/ContinueButton.module.css";
 
 const ContinuteButton = () => {
     return(<>

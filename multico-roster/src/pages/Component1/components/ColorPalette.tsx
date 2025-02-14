@@ -1,4 +1,4 @@
-import Styles from "./ColorPalette.module.css";
+import Styles from "../styles/ColorPalette.module.css";
 
 const ColorPalette = () => {
     return(<>

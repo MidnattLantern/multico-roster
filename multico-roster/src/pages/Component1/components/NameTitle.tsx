@@ -1,10 +1,14 @@
-import Styles from "./NameTitle.module.css";
+import Styles from "../styles/NameTitle.module.css";
 
-const NameTitle = () => {
+const NameTitle: React.FC<{
+    currentCharacterName: string, currentCharacterSubtext: string
+}> = ({
+    currentCharacterName, currentCharacterSubtext
+}) => {
     return(<>
         <div className={`${Styles.NameTitleComponent} ${Styles.CannotInteract}`}>
-            <h1 className={Styles.NameTitleHeader}>{"NICOLETTE"}</h1>
-            <p className={Styles.NameTitleSubText}>{"Street rat victim of a terrible fate"}</p>
+            <h1 className={Styles.NameTitleHeader}>{currentCharacterName}</h1>
+            <p className={Styles.NameTitleSubText}>{currentCharacterSubtext}</p>
         </div>
     </>)
 };

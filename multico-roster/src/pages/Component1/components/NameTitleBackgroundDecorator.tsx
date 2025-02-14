@@ -1,4 +1,4 @@
-import Styles from "./NameTitleBackgroundDecorator.module.css";
+import Styles from "../styles/NameTitleBackgroundDecorator.module.css";
 
 const NameTitleBackgroundDecorator = () => {
     return(<>

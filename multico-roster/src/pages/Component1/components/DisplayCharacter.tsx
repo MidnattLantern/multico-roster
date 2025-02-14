@@ -1,5 +1,5 @@
 import { NicoletteImage1Alt } from "../../../assets/character-roster/nicolette/";
-import Styles from "./DisplayCharacter.module.css";
+import Styles from "../styles/DisplayCharacter.module.css";
 
 const DisplayCharacter = () => {
     return(<>

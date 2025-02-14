@@ -1,4 +1,4 @@
-import Styles from "./CornerDecorators.module.css";
+import Styles from "../styles/CornerDecorators.module.css";
 import TopLeftCorner from "../../../assets/vector-graphics/TopLeftCorner.svg?react";
 import BottomLeftCorner from "../../../assets/vector-graphics/BottomLeftCorner.svg?react";
 import BottomRightCorner from "../../../assets/vector-graphics/BottomRightCorner.svg?react";

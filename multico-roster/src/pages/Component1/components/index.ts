@@ -6,3 +6,4 @@ export { default as MiniCollage} from "./MiniCollage";
 export { default as ContinueButton } from "./ContinueButton";
 export { default as DisplayCharacter } from "./DisplayCharacter";
 export { default as NameTitleBackgroundDecorator } from "./NameTitleBackgroundDecorator";
+export { default as CharacterList } from "./CharacterList";
