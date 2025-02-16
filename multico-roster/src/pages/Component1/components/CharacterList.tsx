@@ -1,20 +1,48 @@
-import { NicoletteImage1Alt } from "../../../assets/character-roster/nicolette/";
-import { NicoletteImage2Alt } from "../../../assets/character-roster/nicolette/";
-import { NicoletteImage3Alt } from "../../../assets/character-roster/nicolette/";
-import Styles from "./CharacterList.module.css";
+import Styles from "../styles/CharacterList.module.css";
+import rosterData from "../../../data/roster_data.json";
+import { MapCharacterImages } from "../../../assets/character-roster/MapCharacterImages";
+
+type Character = {
+    id: number;
+    name: string;
+    colorTheme: string;
+};
+
+const ChildComponent: React.FC<{
+    character: Character;
+}> = ({
+    character
+}) => {
+    const images = MapCharacterImages[character.name];
+
+    if (character.id !== 0) { // id 0 cause blackout
+        return(<>
+            <div className={`${Styles.CharacterItem} ${Styles.CharacterItemSelected}`}>
+                <img
+                style={{ backgroundColor: character.colorTheme}} // override the inline shadow, there's a mix-blend-mode in css
+                className={`${Styles.CharacterItemImageSize} ${Styles.CannotInteract}`}
+                src={images[2]}
+                alt={character.name}
+                />
+            </div>
+        </>)
+    }
+
+};
 
 const CharacterList = () => {
+
     return(<>
         <div className={Styles.CharacterListFoundation}>
+
             <div className={`${Styles.CharacterItem} ${Styles.CharacterItemSelected}`}>
-                <img className={`${Styles.CharacterItemImageSize} ${Styles.CannotInteract}`} src={NicoletteImage1Alt} alt="Nicolette 1"/>
+                <p>none</p>
             </div>
-            <div className={Styles.CharacterItem}>
-                <img className={`${Styles.CharacterItemImageSize} ${Styles.CannotInteract}`} src={NicoletteImage2Alt} alt="Nicolette 2"/>
-            </div>
-            <div className={Styles.CharacterItem}>
-                <img className={`${Styles.CharacterItemImageSize} ${Styles.CannotInteract}`} src={NicoletteImage3Alt} alt="Nicolette 3"/>
-            </div>
+
+            {rosterData.map((character) => (
+                <ChildComponent character={character}/>
+            ))}
+
         </div>
     </>)
 };

@@ -25,7 +25,6 @@
     margin-bottom: 10.0px;
     width: 5vw;
     height: 90%;
-    background-color: var(--theme-nicolette);
     border: none;
     border-radius: 5px;
     box-shadow: inset 1px 2px 10px var(--dark);
@@ -46,6 +45,7 @@
     height: 100%;
     object-fit: contain; /* Keeps aspect ratio */
     transform: scale(5);
+    mix-blend-mode: multiply; /* background color assigned from tsx file overrides the shadow without this */
 }
 .CharacterItemSelected{
     height: 105%;
