@@ -12,6 +12,7 @@ import {
 } from "./components";
 import rosterData from "../../data/roster_data.json";
 import { useEffect, useState } from "react";
+import { useRoster } from "../../contexts/RosterContext";
 
 const Component1 = () => {
     const [identifyCharacter, setIdentifyCharacter] = useState<number>(0); // 0 or ID does not exist will cause "blackout"
@@ -23,9 +24,13 @@ const Component1 = () => {
     const currentColorAccent = rosterData[identifyCharacter]["colorAccent"];
     const currentColorTheme = rosterData[identifyCharacter]["colorTheme"];
 
+    const {
+        selectedCharacter,
+    } = useRoster();
+
     useEffect(() => {
-        setIdentifyCharacter(1);
-    }, []);
+        setIdentifyCharacter(selectedCharacter);
+    }, [selectedCharacter]);
 
     return(<>
         <div className={Styles.Component1Foundation}>
