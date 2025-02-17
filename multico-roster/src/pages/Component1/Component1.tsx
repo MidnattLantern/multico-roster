@@ -13,6 +13,7 @@ import {
 import rosterData from "../../data/roster_data.json";
 import { useEffect, useState } from "react";
 import { useRoster } from "../../contexts/RosterContext";
+import CharacterInfoPanel from "./components/CharacterInfoPanel";
 
 const Component1 = () => {
     const [identifyCharacter, setIdentifyCharacter] = useState<number>(0); // 0 or ID does not exist will cause "blackout"
@@ -23,6 +24,7 @@ const Component1 = () => {
     const currentColorSecondary = rosterData[identifyCharacter]["colorSecondary"];
     const currentColorAccent = rosterData[identifyCharacter]["colorAccent"];
     const currentColorTheme = rosterData[identifyCharacter]["colorTheme"];
+    const [showCharacterInfoPanel, setShowCharacterInfoPanel] = useState<boolean>(false);
 
     const {
         selectedCharacter,
@@ -68,10 +70,19 @@ const Component1 = () => {
                 <ContinueButton
                 currentCharacterID={currentCharacterID}
                 currentCharacterName={currentCharacterName}
+                setShowCharacterInfoPanel={setShowCharacterInfoPanel}
                 />
             </div>
 
             <CharacterList />
+            {showCharacterInfoPanel ?
+                <CharacterInfoPanel
+                currentCharacterName={currentCharacterName}
+                currentCharacterSubtext={currentCharacterSubtext}
+                setShowCharacterInfoPanel={setShowCharacterInfoPanel}
+                />
+            : null}
+
 
         </div>
     </>)

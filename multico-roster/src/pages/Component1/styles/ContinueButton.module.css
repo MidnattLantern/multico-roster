@@ -36,6 +36,7 @@
     display: flex;
     align-items: center;
     justify-content:end;
+    transition: all ease 0.15s;
 }
 .ContinuteButtonArrow{
     width: 5vw; /* fit-content cause a bug for non-firefox browsers */
@@ -43,8 +44,8 @@
 .ContinuteButtonStyle:hover{
     cursor: pointer;
     background-color: var(--light);
-    color: var(--light);
-    transition: all ease 0.15s;
+    color: var(--theme);
+    transition: all ease 0.25s;
 }
 .Unselected{
     font-family: "Do Hyeon", Serif;

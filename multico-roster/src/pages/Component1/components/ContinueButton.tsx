@@ -4,9 +4,11 @@ import Styles from "../styles/ContinueButton.module.css";
 const ContinuteButton: React.FC<{
     currentCharacterID: number;
     currentCharacterName: string;
+    setShowCharacterInfoPanel: React.Dispatch<React.SetStateAction<boolean>>
 }> = ({
     currentCharacterID,
-    currentCharacterName
+    currentCharacterName,
+    setShowCharacterInfoPanel
 }) => {
 
     function capitalizeFirstLetter(val: string) {
@@ -17,7 +19,7 @@ const ContinuteButton: React.FC<{
     <div className={Styles.ContinuteButtonComponent}>
         <div className={Styles.ContinuteButtonBorder}>
             {currentCharacterID !== 0 ? (<>
-                <button className={Styles.ContinuteButtonStyle}>
+                <button className={Styles.ContinuteButtonStyle} onClick={() => {setShowCharacterInfoPanel(true)}}>
                     {`Read about ${capitalizeFirstLetter(currentCharacterName)}`}
                     <ContinueButtonArrow className={Styles.ContinuteButtonArrow}/>
                 </button>

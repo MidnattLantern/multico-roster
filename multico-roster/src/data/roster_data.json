@@ -20,7 +20,7 @@
     {
         "id": 2,
         "name": "nutoilet",
-        "subtext": "very saucy rat",
+        "subtext": "Test duplicate until 2nd character",
         "colorPrimary": "#3D3C42",
         "colorSecondary": "#ffffff",
         "colorAccent": "#927A72",
