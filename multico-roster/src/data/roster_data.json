@@ -6,7 +6,16 @@
         "colorPrimary": "#ffffff",
         "colorSecondary": "#ffffff",
         "colorAccent": "#ffffff",
-        "colorTheme": "#ffffff"
+        "colorTheme": "#ffffff",
+        "alignMiniCollageImageTop1": 0,
+        "alignMiniCollageImageLeft1": 0,
+        "alignMiniCollageImageTop2": 0,
+        "alignMiniCollageImageLeft2": 0,
+        "alignMiniCollageImageTop3": 0,
+        "alignMiniCollageImageLeft3": 0,
+        "alignCharacterOptionTop": 0,
+        "alignCharacterOptionLeft": 0,
+        "alignCharacterOptionScale": 0
     },
     {
         "id": 1,
@@ -15,15 +24,33 @@
         "colorPrimary": "#3D3C42",
         "colorSecondary": "#ffffff",
         "colorAccent": "#927A72",
-        "colorTheme": "#CC012D"
+        "colorTheme": "#CC012D",
+        "alignMiniCollageImageTop1": 18.5,
+        "alignMiniCollageImageLeft1": -1,
+        "alignMiniCollageImageTop2": 17.5,
+        "alignMiniCollageImageLeft2": 0,
+        "alignMiniCollageImageTop3": 18,
+        "alignMiniCollageImageLeft3": 0,
+        "alignCharacterOptionTop": 17,
+        "alignCharacterOptionLeft": 0,
+        "alignCharacterOptionScale": 7
     },
     {
         "id": 2,
-        "name": "nutoilet",
-        "subtext": "Test duplicate until 2nd character",
-        "colorPrimary": "#3D3C42",
-        "colorSecondary": "#ffffff",
-        "colorAccent": "#927A72",
-        "colorTheme": "#CC012D"
+        "name": "akuma",
+        "subtext": "Rage flowing through veins of ice",
+        "colorPrimary": "#D46474",
+        "colorSecondary": "#8B4368",
+        "colorAccent": "#EAA495",
+        "colorTheme": "#312447",
+        "alignMiniCollageImageTop1": 15.0,
+        "alignMiniCollageImageLeft1": 1.0,
+        "alignMiniCollageImageTop2": 11.0,
+        "alignMiniCollageImageLeft2": 8.5,
+        "alignMiniCollageImageTop3": 18.0,
+        "alignMiniCollageImageLeft3": 0.5,
+        "alignCharacterOptionTop": 20,
+        "alignCharacterOptionLeft": 0.25,
+        "alignCharacterOptionScale": 12.5
     }
 ]

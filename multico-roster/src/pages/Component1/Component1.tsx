@@ -20,10 +20,19 @@ const Component1 = () => {
     const currentCharacterID = rosterData[identifyCharacter]["id"];
     const currentCharacterName = rosterData[identifyCharacter]["name"];
     const currentCharacterSubtext = rosterData[identifyCharacter]["subtext"];
+
     const currentColorPrimary = rosterData[identifyCharacter]["colorPrimary"];
     const currentColorSecondary = rosterData[identifyCharacter]["colorSecondary"];
     const currentColorAccent = rosterData[identifyCharacter]["colorAccent"];
     const currentColorTheme = rosterData[identifyCharacter]["colorTheme"];
+
+    const currentAlignMiniCollageImageTop1 = rosterData[identifyCharacter]["alignMiniCollageImageTop1"];
+    const currentAlignMiniCollageImageLeft1 = rosterData[identifyCharacter]["alignMiniCollageImageLeft1"];
+    const currentAlignMiniCollageImageTop2 = rosterData[identifyCharacter]["alignMiniCollageImageTop2"];
+    const currentAlignMiniCollageImageLeft2 = rosterData[identifyCharacter]["alignMiniCollageImageLeft2"];
+    const currentAlignMiniCollageImageTop3 = rosterData[identifyCharacter]["alignMiniCollageImageTop3"];
+    const currentAlignMiniCollageImageLeft3 = rosterData[identifyCharacter]["alignMiniCollageImageLeft3"];
+
     const [showCharacterInfoPanel, setShowCharacterInfoPanel] = useState<boolean>(false);
 
     const {
@@ -50,6 +59,12 @@ const Component1 = () => {
                 currentCharacterID={currentCharacterID}
                 currentCharacterName={currentCharacterName}
                 currentColorTheme={currentColorTheme}
+                currentAlignMiniCollageImageTop1={currentAlignMiniCollageImageTop1}
+                currentAlignMiniCollageImageLeft1={currentAlignMiniCollageImageLeft1}
+                currentAlignMiniCollageImageTop2={currentAlignMiniCollageImageTop2}
+                currentAlignMiniCollageImageLeft2={currentAlignMiniCollageImageLeft2}
+                currentAlignMiniCollageImageTop3={currentAlignMiniCollageImageTop3}
+                currentAlignMiniCollageImageLeft3={currentAlignMiniCollageImageLeft3}
                 />
                 <NameTitleBackgroundDecorator
                 currentCharacterID={currentCharacterID}
@@ -82,7 +97,6 @@ const Component1 = () => {
                 setShowCharacterInfoPanel={setShowCharacterInfoPanel}
                 />
             : null}
-
 
         </div>
     </>)

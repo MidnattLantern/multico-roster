@@ -22,6 +22,9 @@
 .CentreSection{
     width: 34%;
     height: 100%;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
 }
 .RightSection{
     width: 33%;

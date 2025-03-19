@@ -7,11 +7,21 @@ type CharacterTSType = {
     id: number;
     name: string;
     colorTheme: string;
+    alignCharacterOptionTop: number;
+    alignCharacterOptionLeft: number;
+    alignCharacterOptionScale: number
 };
 
 const CharacterOption: React.FC<{ character: CharacterTSType }> = ({ character }) => {
     const { selectedCharacter, setSelectedCharacter } = useRoster();
     const images = MapCharacterImages[character.name];
+
+    const optionProperties = {
+        "backgroundColor": character.colorTheme, // override the inline shadow, there's a mix-blend-mode in css
+        "top": `${character.alignCharacterOptionTop}vw`,
+        "left": `${character.alignCharacterOptionLeft}vw`,
+        "transform": `scale(${character.alignCharacterOptionScale})`
+    }
 
     if (character.id !== 0) { // id 0 cause blackout, using div instead for button for desired mix-blend-mode outcome
         return(<>
@@ -20,7 +30,7 @@ const CharacterOption: React.FC<{ character: CharacterTSType }> = ({ character }
             onClick={() => {setSelectedCharacter(character.id)}}
             >
                 <img
-                style={{ backgroundColor: character.colorTheme}} // override the inline shadow, there's a mix-blend-mode in css
+                style={optionProperties}
                 className={`${Styles.CharacterItemImageSize} ${Styles.CannotInteract}`}
                 src={images[2]}
                 alt={character.name}

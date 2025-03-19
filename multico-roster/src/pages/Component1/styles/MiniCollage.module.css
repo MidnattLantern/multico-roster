@@ -23,7 +23,6 @@
 }
 .MiniCollageImage{
     position: relative;
-    top: 17.5vw;
     width: 100%;
     height: 100%;
     object-fit: contain; /* Keeps aspect ratio */

@@ -7,7 +7,8 @@
 }
 
 .ImageSize{
-    width: 100%;
+    width: auto;
+    height: 100%;
 }
 .ImageShadow {
     filter: drop-shadow(-2vh 2vh 1vh var(--dark-transparent));
