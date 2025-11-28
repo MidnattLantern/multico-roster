@@ -52,5 +52,23 @@
         "alignCharacterOptionTop": 20,
         "alignCharacterOptionLeft": 0.25,
         "alignCharacterOptionScale": 12.5
+    },
+    {
+        "id": 3,
+        "name": "pete",
+        "subtext": "Horns crowned with love and hate",
+        "colorPrimary": "#D46474",
+        "colorSecondary": "#8B4368",
+        "colorAccent": "#EAA495",
+        "colorTheme": "#312447",
+        "alignMiniCollageImageTop1": 17.0,
+        "alignMiniCollageImageLeft1": -3.0,
+        "alignMiniCollageImageTop2": 14.0,
+        "alignMiniCollageImageLeft2": -0.5,
+        "alignMiniCollageImageTop3": 18.0,
+        "alignMiniCollageImageLeft3": 1.0,
+        "alignCharacterOptionTop": 16.0,
+        "alignCharacterOptionLeft": 0.0,
+        "alignCharacterOptionScale": 5.5
     }
 ]

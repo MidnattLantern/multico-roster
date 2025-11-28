@@ -46,13 +46,13 @@ const MiniCollage: React.FC<{
         <div className={Styles.MiniCollageArray}>
             {currentCharacterID !== 0 ? (<>
                 <div className={Styles.MiniCollageObject} style={{ backgroundColor: currentColorTheme}}>
-                    <img className={`${Styles.MiniCollageImage} ${Styles.CannotInteract}`} style={alignImage1} src={images[0]} alt="Nicolette 1"/>
+                    <img className={`${Styles.MiniCollageImage} ${Styles.CannotInteract}`} style={alignImage1} src={images[0]} alt=""/>
                 </div>
                 <div className={Styles.MiniCollageObject} style={{ backgroundColor: currentColorTheme}}>
-                    <img className={`${Styles.MiniCollageImage} ${Styles.CannotInteract}`} style={alignImage2} src={images[1]} alt="Nicolette 2"/>
+                    <img className={`${Styles.MiniCollageImage} ${Styles.CannotInteract}`} style={alignImage2} src={images[1]} alt=""/>
                 </div>
                 <div className={Styles.MiniCollageObject} style={{ backgroundColor: currentColorTheme}}>
-                    <img className={`${Styles.MiniCollageImage} ${Styles.CannotInteract}`} style={alignImage3} src={images[2]} alt="Nicolette 3"/>
+                    <img className={`${Styles.MiniCollageImage} ${Styles.CannotInteract}`} style={alignImage3} src={images[2]} alt=""/>
                 </div>
             </>) : (<>
                 <div className={Styles.MiniCollageObject} />
